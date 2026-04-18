@@ -9,7 +9,7 @@ export const register = createAsyncThunk(
   "admin/register",
   async (data, thunkAPI) => {
     try {
-      const res = await API.post("/register", data);
+      const res = await API.post("/user/register", data);
       return res.data;
     } catch (error) {
       console.error(error);
