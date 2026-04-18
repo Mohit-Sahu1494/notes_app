@@ -174,7 +174,6 @@ export const pinNote = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const res = await API.put(`/note/pin/${data.id}`);
-      console.log("res.data.data",res.data.data)
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(
