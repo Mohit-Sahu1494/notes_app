@@ -57,7 +57,7 @@ export function NoteCard({ note, onEdit, isTrashView }) {
     <div className="group bg-card rounded-2xl border border-border p-5 hover:shadow-lg dark:hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 cursor-pointer relative flex flex-col h-full min-h-[180px]">
 
       {/* Top Actions */}
-      <div className="absolute top-4 right-4 flex items-center gap-1 sm:gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+      <div className="absolute top-4 right-4 flex items-center gap-1 sm:gap-2  transition-opacity z-10">
 
         {!isTrashView && (
           <button
