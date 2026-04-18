@@ -9,7 +9,7 @@ const app = express();
 // --- 1. CORS CONFIGURATION (CRITICAL FIX) ---
 app.use(cors({
   
-    origin: ["http://localhost:5173","http://localhost:5174","https://notes-app-ten-eosin.vercel.app],
+    origin: ["http://localhost:5173","http://localhost:5174","https://notes-app-ten-eosin.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     allowedHeaders: ["Content-Type", "Authorization"]
